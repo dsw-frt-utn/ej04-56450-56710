@@ -5,6 +5,7 @@ import domain.*;
 public class VehiculoViewModel {
     private String patente;
     private String vehiculo;
+     private Marca marca;
     private String tipo;
     private String sucursal;
     private double capacidadCarga;
@@ -24,6 +25,7 @@ public class VehiculoViewModel {
         kmPorLitro = vehiculo instanceof VehiculoCombustible ? ((VehiculoCombustible)vehiculo).getKilometrosPorLitro() : 0;
         litrosExtra = vehiculo instanceof VehiculoCombustible ? ((VehiculoCombustible)vehiculo).getLitrosExtra() : 0;
         kmARecorrer = 100;
+           marca = vehiculo.getMarca();
     }
 
     public String getPatente() {
@@ -34,6 +36,10 @@ public class VehiculoViewModel {
         return vehiculo;
     }
 
+       public Marca getMarca() {
+        return marca;
+    }
+    
     public String getTipo() {
         return tipo;
     }
