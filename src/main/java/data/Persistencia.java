@@ -55,4 +55,8 @@ public class Persistencia {
         inicializarSucursales();
         inicializarVehiculos();
     }
+    
+    public static void agregarVehiculo(Vehiculo v){
+        vehiculos.add(v);
+    }
 }
