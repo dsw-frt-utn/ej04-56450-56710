@@ -59,4 +59,8 @@ public class Persistencia {
     public static void agregarVehiculo(Vehiculo v){
         vehiculos.add(v);
     }
+
+    public static boolean existePatente(String patente) {
+       return getVehiculo(patente).isPresent();
+    }
 }

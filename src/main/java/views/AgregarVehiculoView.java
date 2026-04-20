@@ -8,6 +8,7 @@ public class AgregarVehiculoView extends javax.swing.JFrame {
 
     public AgregarVehiculoView() {
         initComponents();
+         this.setLocationRelativeTo(null);
     }
 
     @SuppressWarnings("unchecked")
